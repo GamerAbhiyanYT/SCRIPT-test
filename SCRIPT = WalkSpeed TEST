@@ -16,34 +16,21 @@ ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 Frame.Parent = ScreenGui
 Frame.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
 Frame.BackgroundTransparency = 0.500
-Frame.Position = UDim2.new(0.858712733, 0, 0.0237762257, 0)
-Frame.Size = UDim2.new(0.129513338, 0, 0.227972031, 0)
+Frame.Position = UDim2.new(0.006, 0,0.400, 0)
+Frame.Size = UDim2.new(0, 100,0, 30)
 
 TextButton.Parent = Frame
-TextButton.BackgroundColor1 = Color3.fromRGB(255, 0, 0)
-TextButton.BackgroundColor2 = Color3.fromRGB(255, 127, 0)
-TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 0)
-TextButton.BackgroundColor4 = Color3.fromRGB(0, 255, 0)
-TextButton.BackgroundColor5 = Color3.fromRGB(0, 0, 255)
-TextButton.BackgroundColor6 = Color3.fromRGB(75, 0, 130)
-TextButton.BackgroundColor7 = Color3.fromRGB(170, 0, 243)
+TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextButton.BackgroundTransparency = 1.000
 TextButton.Size = UDim2.new(1, 0, 1, 0)
 TextButton.Font = Enum.Font.SourceSans
-TextButton.Text = "Toggle WalJum"
-TextButton.TextColor1 = Color3.fromRGB(255, 0, 0)
-TextButton.TextColor2 = Color3.fromRGB(255, 127, 0)
-TextButton.TextColor3 = Color3.fromRGB(255, 255, 0)
-TextButton.TextColor4 = Color3.fromRGB(0, 255, 0)
-TextButton.TextColor5 = Color3.fromRGB(0, 0, 255)
-TextButton.TextColor6 = Color3.fromRGB(75, 0, 130)
-TextButton.TextColor7 = Color3.fromRGB(170, 0, 243)
+TextButton.Text = "Explan Toggle"
+TextButton.TextColor3 = Color3.fromRGB(255, 0, 0)
 TextButton.TextScaled = true
 TextButton.TextSize = 50.000
-TextButton.TextStrokeColor3 = Color3.new(k/255,0/255,0/255)
+TextButton.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
 TextButton.TextStrokeTransparency = 0.000
 TextButton.TextWrapped = true
-
 TextButton.MouseButton1Down:Connect(function()
 	game:GetService("VirtualInputManager"):SendKeyEvent(true, "Q" , false , game)
 end)
@@ -70,7 +57,11 @@ starterGui:SetCore("SendNotification",{
 Title = "Message GamerAbhiyan",
 Text = "Thanks You For Executing My Script"
 })
-local Window = Library.CreateLib("WalkSpeed GUI | Universal Waljum HUB | 【V2.9】", getgenv().Theme)
+local Window = Library.CreateLib("Universal Explan HUB | 【V3.1】", getgenv().Theme)
+local Tab = Window:NewTab("Recommended")
+local Section = Tab:NewSection("If You Die You Will Lose The Toggle")
+local Section = Tab:NewSection("And You Executed Again And Too")
+local Section = Tab:NewSection("This Script Was Previously Closed First Yaa")
 local Tab = Window:NewTab("Home")
 local Section = Tab:NewSection("Speed")
 Section:NewSlider("WalkSpeed", "bruh", 50, 16, function(s) -- 50 (MaxValue) | 16 (MinValue)
@@ -592,11 +583,7 @@ Section:NewButton("Copy To ClipBoard", "Work Or Not Work?", function()
 end)
 local Section = Tab:NewSection("My Discord")
 Section:NewButton("Copy To ClipBoard", "Work Or Not Work?", function()
-	setclipboard("https://discord.gg/FZPnkuGR")
-end)
-local Section = Tab:NewSection("My Name Roblox")
-Section:NewButton("Copy To ClipBoard", "Work Or Not Work?", function()
-	setclipboard("lagu_introbeacon")
+	setclipboard("https://discord.gg/G3K4d8Eu")
 end)
 local Tab = Window:NewTab("My Script")
 local Section = Tab:NewSection("= My Script =")
@@ -642,7 +629,7 @@ Title = "Message",
 Text = "Successfully Executed"
 })
 end)
-Section:NewButton("WalkSpeed GUI | MOVEABLE| AUTO UPDATE", "", function()
+Section:NewButton("WalkSpeed GUI | MOVEABLE | AUTO UPDATE", "", function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/GamerAbhiyanYT/Script/main/SCRIPT%20%3D%20WalkSpeed%20GUI%20%7C%20MOVEABLE"))()
 starterGui:SetCore("SendNotification",{
 Title = "Message",
