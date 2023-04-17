@@ -36,7 +36,7 @@ TextButton.MouseButton1Down:Connect(function()
 end)
 
 UITextSizeConstraint.Parent = TextButton
-UITextSizeConstraint.MaxTextSize = 45
+UITextSizeConstraint.MaxTextSize = 40
 
 local Library = loadstring(game:HttpGet("https://pastebin.com/raw/vff1bQ9F"))()
 getgenv().Theme = "BloodTheme"
@@ -57,7 +57,7 @@ starterGui:SetCore("SendNotification",{
 Title = "Message GamerAbhiyan",
 Text = "Thanks You For Executing My Script"
 })
-local Window = Library.CreateLib("Universal Explan HUB | 【V3.1】", getgenv().Theme)
+local Window = Library.CreateLib("Universal Explan HUB | 【V3.2】", getgenv().Theme)
 local Tab = Window:NewTab("Recommended")
 local Section = Tab:NewSection("If You Die You Will Lose The Toggle")
 local Section = Tab:NewSection("And You Executed Again And Too")
